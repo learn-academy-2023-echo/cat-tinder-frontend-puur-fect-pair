@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer tooter</div>
+  <>
+  <p>&copy; Conchetta and Ezra 🦊</p>
+  </>
   )
 }
 
