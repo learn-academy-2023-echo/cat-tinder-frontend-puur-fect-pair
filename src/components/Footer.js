@@ -1,10 +1,9 @@
-import React from "react"
+import React from 'react'
 
 const Footer = () => {
-    <>
-    <h3>Footer tooter!</h3>
-    {/* console.log("hello") */}
-    </>
+  return (
+    <div>Footer tooter</div>
+  )
 }
 
 export default Footer

@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react'
 
 const Home = () => {
-    <>
-    <h3>Home Scratcher</h3>
-    </>
+  return (
+    <div>Home Cats</div>
+  )
 }
 
 export default Home

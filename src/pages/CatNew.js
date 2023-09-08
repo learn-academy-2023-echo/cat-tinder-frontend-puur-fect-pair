@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react'
 
 const CatNew = () => {
-    <>
-    <h3>Lookin for some new new?</h3>
-    </>
+  return (
+    <div>New meow meow</div>
+  )
 }
 
 export default CatNew

@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react'
 
 const NotFound = () => {
-    <>
-    <h3>Whoopsie daisy, looks like this kitty is stuck in a tree!</h3>
-    </>
+  return (
+    <div>Oh no, I cant be found stuck in this tree!</div>
+  )
 }
 
 export default NotFound
