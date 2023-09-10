@@ -13,7 +13,7 @@ const Header = () => {
       </NavItem>
       <NavItem>
         <NavLink to="/catindex" className="nav-link">
-        See all the kitties!
+        Meet the kitties!
         </NavLink>
       </NavItem>
       <NavItem>
