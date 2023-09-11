@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom"
 const Header = () => {
   return (
 
+    
     <Nav>
       <NavItem>
         <NavLink to="/" className="nav-link">
@@ -22,6 +23,7 @@ const Header = () => {
         </NavLink>
       </NavItem>
     </Nav>
+  
   )
 }
 

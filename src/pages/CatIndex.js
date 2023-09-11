@@ -1,6 +1,5 @@
 import React from 'react'
 import {Card, CardBody, CardTitle, CardSubtitle, Button} from "reactstrap"
-import './catIndex.css'
 import { NavLink } from "react-router-dom";
 
 const CatIndex = ({ cats }) => {
@@ -8,6 +7,7 @@ const CatIndex = ({ cats }) => {
     <>
     {cats.map((cat, index) => {
         return (
+        <div className="page-body"> 
               <Card
                 style={{
                   width: '18rem'
@@ -29,6 +29,7 @@ const CatIndex = ({ cats }) => {
               </Button>
                 </CardBody>
               </Card>
+              </div>
         )
       })
     }

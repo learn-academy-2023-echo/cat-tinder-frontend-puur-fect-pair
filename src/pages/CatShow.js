@@ -8,12 +8,15 @@ const CatShow = ({ cats }) => {
   let showCat = cats.find((cat) => cat.id === +id)
 
   return (
-    // <div>Show the kitkat</div>
     <> 
-    <img 
+    {/* <div className="page-body"> */}
+    <div className="card-show, card-body"> 
+    <img className="cat-image"
     alt={`profile picture of ${showCat.name}`}
     src={showCat.image}/>
-    <h3>{showCat.name} loves {showCat.enjoys}</h3>
+    <h3 className="show-text">{showCat.name} loves {showCat.enjoys}</h3>
+    </div>
+    {/* </div> */}
     </>
   )
 }

@@ -1,38 +1,83 @@
-.App {
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.page-body {
+  background-color: #017c74;
+  background-image: url("/src/assets/background-paws.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  width: 100vw;
+
+} 
+
+.card.card-body {
+  width: 300px;
+  background-color: #FFFEF1;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-image: url("/src/assets/background-paws.png");
+} 
+
+.btn.btn-secondary {
+  width: 125px;
+  margin: 10px;
+  background-color: #f8eebc;
+  color: #017c74;
+  font-weight: bolder; 
+}
+
+.btn.btn-secondary:hover {
+  color: #017c74;
+  background-color: #f7d359;
+}
+
+.cat-image{
+  margin: 0 auto;
+  width: 25%;
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.p{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.show-text{
+  text-align: center !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-page{
+  background-image: url("/src/assets/home-image.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.not-found{
+  background-image: url("/src/assets/not-found.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new-cat{
+  background-image: url("/src/assets/background-paws.png");
+  width: 35%;
 }

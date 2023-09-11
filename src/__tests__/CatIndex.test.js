@@ -7,7 +7,7 @@ describe("<CatIndex />", () => {
     it ("renders cat cards", () => {
         render(
             <BrowserRouter>
-            <CatIndex  cats={mockCats}/>
+              <CatIndex  cats={mockCats}/>
             </BrowserRouter>
         )
         mockCats.forEach(cat => {
