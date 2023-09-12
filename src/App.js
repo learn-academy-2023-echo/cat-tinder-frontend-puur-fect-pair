@@ -21,8 +21,6 @@ import { Routes, Route } from "react-router-dom"
     }
 
     const updateCat = (cat, id) => {
-      console.log("cat:", cat)
-      console.log("id:", id)
     }
 
   return (

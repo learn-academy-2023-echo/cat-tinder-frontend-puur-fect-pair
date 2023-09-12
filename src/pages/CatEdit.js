@@ -1,10 +1,11 @@
 import React, {useState} from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Form, FormGroup, Input, Label, Button } from "reactstrap";
 
 const CatEdit = ({ cats, updateCat}) => {
   const { id } = useParams()
   let currentCat = cats?.find((cat) => cat.id === +id)
+
 
   const [editCat, setEditCat] = useState ({
     name: currentCat.name,
@@ -13,10 +14,16 @@ const CatEdit = ({ cats, updateCat}) => {
     image: currentCat.image
   })
 
-  const handleSubmit = () => {
-    updateCat(editCat, currentCat.id)
+  const handleChange = (e) =>{
+    setEditCat({ ...editCat, [e.target.name]: e.target.value })
   }
 
+  const navigate = useNavigate()
+  const handleSubmit = () => {
+    updateCat(editCat, currentCat.id)
+    navigate("/catindex")
+  }
+    // console.log(editCat)
   return (
     <>
       <h2>Edit your kitty kitty here!</h2>
@@ -28,6 +35,7 @@ const CatEdit = ({ cats, updateCat}) => {
             name="name"
             placeholder="Update kit kat"
             type="text"
+            onChange={handleChange}
           />
         </FormGroup>
         <FormGroup>
@@ -37,6 +45,7 @@ const CatEdit = ({ cats, updateCat}) => {
             name="age"
             placeholder="Update cats age"
             type="number"
+            onChange={handleChange}
           />
         </FormGroup>
         <FormGroup>
@@ -46,6 +55,7 @@ const CatEdit = ({ cats, updateCat}) => {
             name="enjoys"
             placeholder="Update new hobbies here"
             type="text"
+            onChange={handleChange}
           />
         </FormGroup>
         <FormGroup>
@@ -55,6 +65,7 @@ const CatEdit = ({ cats, updateCat}) => {
             name="image"
             placeholder="Drop your new picture here"
             type="url"
+            onChange={handleChange}
           />
         </FormGroup>
       </Form>
