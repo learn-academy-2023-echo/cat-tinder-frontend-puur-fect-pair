@@ -19,6 +19,10 @@ import { Routes, Route } from "react-router-dom"
     const createKitty = (kitty) => {
       console.log("Created Kitty", kitty)
     }
+
+    const updateCat = (cat, id) => {
+    }
+
   return (
   <>
   <Header />
@@ -27,7 +31,7 @@ import { Routes, Route } from "react-router-dom"
       <Route path="/catindex" element={<CatIndex cats={cats} />} />
       <Route path="/catshow/:id" element={<CatShow cats={cats} />} />
       <Route path="/catnew" element={<CatNew createKitty={createKitty} />} />
-      <Route path="/catedit" element={<CatEdit />} />
+      <Route path="/catedit/:id" element={<CatEdit cats={cats} updateCat={updateCat} />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   <Footer />
